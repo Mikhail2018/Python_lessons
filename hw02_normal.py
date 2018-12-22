@@ -56,7 +56,7 @@ lst2 = list(set(lst))
 lst3 = []
 for k in lst:
     x = lst.count(k)
-    if x <= 1:
+    if x == 1:
         lst3.append(k)
 print('Задача а: ', lst2)
 print('Задача б: ', lst3)

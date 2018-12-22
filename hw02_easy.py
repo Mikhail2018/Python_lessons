@@ -15,7 +15,7 @@
 
 i = 1
 for l in ['яблоко', 'банан', 'киви', 'арбуз']:
-    print('{0}. {1}'.format(i, l))
+    print('{0}. {1}'.format(i, l.rjust(6)))
     i = i + 1
 
 
@@ -27,8 +27,8 @@ for l in ['яблоко', 'банан', 'киви', 'арбуз']:
 l1 = [7, 8, 3, 9, 5, 0]
 l2 = [4, 9, 2, 7, 0, 6]
 
-for lx in l2:
-    if lx in l1:
+for lx in l1:
+    if lx in l2:
         del l1[l1.index(lx)]
 else:
         print(l1)
@@ -42,7 +42,7 @@ else:
 lol1 = [3, 9, 0, 6, 4, 7, 1]
 lol2 = []
 for l3 in lol1:
-    if l3 / 2 == int(l3 / 2):
+    if l3 % 2 == 0:
         lol2.append(l3 / 4)
     else:
         lol2.append(l3 * 2)
